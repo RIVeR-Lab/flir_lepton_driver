@@ -1,0 +1,6 @@
+<launch>
+    <group ns="flir_lepton">
+    	<node pkg="flir_lepton_driver" type="thermal_img_pub.py" name="thermal_img" output="screen"/>
+    	<rosparam file="$(find flir_lepton_driver)/config/thermal_img_pub_config.yaml" />
+    </group>
+</launch>
